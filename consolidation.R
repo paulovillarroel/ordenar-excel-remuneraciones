@@ -28,4 +28,3 @@ salaries_wide <- salaries_wide |>
   arrange(desc(total_salario)) |>
   select(nombre_completo, calificacion_profesional_o_formacion, all_of(months_present), total_salario) |>
   writexl::write_xlsx("clean-data/salaries_2024.xlsx")
-
